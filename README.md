@@ -38,7 +38,11 @@ Aplicativo mobile nativo desenvolvido para consulta de vocabulário em inglês. 
 5. Clique no botão de **Run 'app'** (Play) na barra superior.
 6. Teste buscando palavras em inglês como *engineer*, *set* ou *mobile*.
 
+## Prints do Aplicativo
 
+![Antes da pesquisa - Português](caminho_da_imagem_1.png)
+![Antes da pesquisa - Inglês](caminho_da_imagem_2.png)
+![Pesquisa Feita - Requiem](caminho_da_imagem_3.png)
 
 ---
 **Autor:** Ian Vieira Corrêa -> Matrícula: 2589931
