@@ -40,9 +40,14 @@ Aplicativo mobile nativo desenvolvido para consulta de vocabulário em inglês. 
 
 ## Prints do Aplicativo
 
-![Antes da pesquisa - Português](caminho_da_imagem_1.png)
-![Antes da pesquisa - Inglês](caminho_da_imagem_2.png)
-![Pesquisa Feita - Requiem](caminho_da_imagem_3.png)
+### Interface em Inglês (Aguardando Busca)
+![Antes da pesquisa - Inglês](Prints/Antes%20da%20pesquisa%20-%20Ingles.png)
+
+### Interface em Português (Aguardando Busca)
+![Antes da pesquisa - Português](Prints/Antes%20da%20pesquisa%20-%20Portugues.png)
+
+### Resultado da Pesquisa (Múltiplas Definições)
+![Pesquisa Feita - Requiem](Prints/Pesquisa%20feita.png)
 
 ---
 **Autor:** Ian Vieira Corrêa -> Matrícula: 2589931
