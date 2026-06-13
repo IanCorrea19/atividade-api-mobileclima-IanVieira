@@ -107,25 +107,20 @@ class MainActivity : AppCompatActivity() {
                     val wordText = firstEntry.getString("word")
                     val phonetic = firstEntry.optString("phonetic", "Phonetic not available")
 
-                    // Pega o primeiro grupo de significados (ex: Substantivo)
                     val meanings = firstEntry.getJSONArray("meanings")
                     val firstMeaning = meanings.getJSONObject(0)
                     val partOfSpeech = firstMeaning.getString("partOfSpeech")
 
-                    // Lista de definições
                     val definitionsArray = firstMeaning.getJSONArray("definitions")
 
-                    // Ferramenta do Kotlin para juntar vários textos de forma otimizada
                     val definicoesJuntas = StringBuilder()
 
-                    // Lógica para pegar até 3 definições (para caber bonito na tela)
                     val limite = if (definitionsArray.length() > 3) 3 else definitionsArray.length()
 
                     for (i in 0 until limite) {
                         val defObj = definitionsArray.getJSONObject(i)
                         val textoDefinicao = defObj.getString("definition")
 
-                        // Adiciona o número (1., 2., 3.) e o texto, pulando duas linhas no final
                         definicoesJuntas.append("${i + 1}. $textoDefinicao\n\n")
                     }
 
@@ -136,7 +131,6 @@ class MainActivity : AppCompatActivity() {
                     tvPhonetic.text = phonetic
                     tvPartOfSpeech.text = "$labelPart${partOfSpeech.uppercase()}"
 
-                    // Remove os espaços extras do final e exibe na tela
                     tvDefinition.text = "$labelDef${definicoesJuntas.toString().trim()}"
 
                     restaurarBotao()
