@@ -38,6 +38,17 @@ Aplicativo mobile nativo desenvolvido para consulta de vocabulário em inglês. 
 5. Clique no botão de **Run 'app'** (Play) na barra superior.
 6. Teste buscando palavras em inglês como *engineer*, *set* ou *mobile*.
 
+## Solução de Problemas
+
+**Erro de Build no Windows (Caracteres não-ASCII no caminho):**
+Caso ocorra uma falha de compilação no Gradle com a mensagem `Your project path contains non-ASCII characters`, isso significa que o projeto foi clonado para uma pasta do Windows cujo caminho contém acentos ou caracteres especiais (ex: `C:\Users\Maria José\...`). O Gradle possui um bloqueio de segurança nativo para esses caminhos.
+
+**Como resolver:**
+* **Opção 1 (Recomendada):** Mova a pasta do projeto para um diretório limpo, sem espaços ou acentos no caminho (ex: `C:\ProjetosAndroid\`).
+* **Opção 2 (Correção via código):** Abra o arquivo `gradle.properties` (na raiz do projeto) e adicione a seguinte flag na última linha para forçar o Gradle a ignorar o alerta:
+  ```properties
+  android.overridePathCheck=true
+
 ## Prints do Aplicativo
 
 ### Interface em Inglês
